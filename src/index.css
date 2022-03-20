@@ -5,9 +5,13 @@
 	--light-font: 400;
 	--bold-font: 700;
 	--neutral: #fff;
+	--neutral-dark: #ebebeb;
 	--main: #011638;
-	--secondary: #087f8c;
+	--secondary: #26a6a6;
+	--secondary-dark: #229696;
 	--text-size: 0.8rem;
+	--huge-size: 5rem;
+	--shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 	font-size: 16px;
 }
 
@@ -17,13 +21,45 @@
 	box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
 	font-family: var(--heading), sans-serif;
 }
 
 p,
 a,
 li,
-.cart-badge {
+.cart-badge,
+button {
 	font-family: var(--text), sans-serif;
+}
+
+.app {
+	overflow-x: hidden;
+}
+
+.body {
+	margin-top: 4rem;
+	padding: 2rem 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 4rem;
+}
+
+.cta-button {
+	padding: 0.5rem 1rem;
+	background-color: var(--secondary);
+	border-radius: 0.5rem;
+	border: none;
+	color: var(--neutral);
+	font-size: var(--text-size);
+	cursor: pointer;
+	transition: 0.1s ease;
+}
+
+.cta-button:hover {
+	background-color: var(--secondary-dark);
+	color: var(--neutral-dark);
 }

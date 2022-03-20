@@ -5,7 +5,11 @@
 	padding: 0rem 4rem;
 	height: 4rem;
 	background-color: var(--main);
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	box-shadow: var(--shadow);
 }
 
 .nav h1 {
@@ -70,6 +74,10 @@ ul {
 	z-index: 999;
 }
 
+.nav svg {
+	font-size: 2rem;
+}
+
 @media screen and (max-width: 1000px) {
 	.nav {
 		padding: 0 1rem;
@@ -80,7 +88,7 @@ ul {
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 8rem;
+		width: 10rem;
 		height: 100vh;
 		margin-top: 4rem;
 		background-color: var(--main);

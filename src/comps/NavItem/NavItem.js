@@ -29,7 +29,7 @@ const NavItem = ({ title, items, device }) => {
 			<a href='#' className='navtitle' style={titleStyle}>
 				{title}
 			</a>
-			{show ? (
+			{show && items ? (
 				<ul className={`dropdown-menu dropdown-${device ? "pc" : "mobile"}`}>
 					{items.map((item) => (
 						<li key={item}>

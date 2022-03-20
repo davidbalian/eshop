@@ -1,7 +1,9 @@
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/system";
 import React from "react";
+import Hero from "./comps/Hero/Hero";
 import Nav from "./comps/Nav/Nav";
+import Showcase from "./comps/Showcase/Showcase";
 
 const App = () => {
 	// const theme = createTheme({
@@ -14,8 +16,12 @@ const App = () => {
 
 	return (
 		// <ThemeProvider theme={theme}>
-		<div>
+		<div className='app'>
 			<Nav />
+			<div className='body'>
+				<Hero />
+				<Showcase title='Shop Fruits' />
+			</div>
 		</div>
 		// </ThemeProvider>
 	);

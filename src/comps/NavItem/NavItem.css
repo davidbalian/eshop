@@ -8,9 +8,6 @@
 	font-size: var(--text-size);
 }
 
-.navitem li {
-}
-
 .dropdown-menu {
 	background-color: var(--neutral);
 	position: fixed;
@@ -30,7 +27,7 @@
 }
 
 .dropdown-mobile {
-	left: 8rem;
+	left: 10rem;
 	top: 4rem;
 	height: 100vh;
 	flex-direction: column;

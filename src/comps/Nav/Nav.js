@@ -28,6 +28,8 @@ const Nav = () => {
 		"Allium"
 	];
 
+	const cerealTypes = ["Rice", "Maize", "Oats", "Rye", "Barley", "Sorghum", "Wheat", "Quinoa"];
+
 	window.onresize = () => {
 		if (window.innerWidth <= 1000) {
 			setShowBurger(1);
@@ -67,14 +69,14 @@ const Nav = () => {
 				<ul
 					className='navlinks'
 					style={{
-						marginLeft: open ? "0" : "-8rem",
+						marginLeft: open ? "0" : "-10rem",
 						transition: `margin-left ${showBurger ? "0.2" : "0"} ease`
 					}}
 				>
 					<NavItem title='Fruits' items={fruitTypes} device={device} />
 					<NavItem title='Vegetables' items={vegetableTypes} device={device} />
-					<NavItem title='Toppings' items={vegetableTypes} device={device} />
-					<NavItem title='Sauces' items={vegetableTypes} device={device} />
+					<NavItem title='Whole Grains' items={null} device={device} />
+					<NavItem title='Cereals' items={cerealTypes} device={device} />
 				</ul>
 			</nav>
 			<h1>Buddy David's</h1>

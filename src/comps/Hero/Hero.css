@@ -1,0 +1,21 @@
+.hero {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16/6.5;
+	background-size: cover;
+	padding: 0rem 6rem;
+	background-blend-mode: darken;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 2rem;
+	box-shadow: var(--shadow);
+}
+
+.hero h1 {
+	color: var(--neutral);
+	letter-spacing: -1px;
+	font-size: var(--huge-size);
+}
