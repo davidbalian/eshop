@@ -29,6 +29,7 @@ const App = () => {
 					<div className='body'>
 						<Routes>
 							<Route path='/' element={<Hero />} />
+							<Route path='/eshop' element={<Hero />} />
 							<Route path='/showcase' element={<Showcase title='Shop Fruits' />} />
 							<Route path='/:category' element={<Category />} />
 							<Route path='/:category/:type' element={<ProductPage />} />

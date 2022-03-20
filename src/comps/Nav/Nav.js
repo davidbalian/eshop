@@ -87,7 +87,9 @@ const Nav = () => {
 					</Link>
 				</ul>
 			</nav>
-			<h1>Buddy David's</h1>
+			<Link to='/' className='logo'>
+				<h1>Buddy David's</h1>
+			</Link>
 			<div className='cart'>
 				<ShoppingCartOutlinedIcon fontSize='medium' className='shopping-cart' />
 				<p className='cart-badge'>3</p>

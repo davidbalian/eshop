@@ -6,7 +6,7 @@ export const products = [
 				title: "apples",
 				prods: [
 					{
-						title: "Cripps Pink/Pink Lady",
+						title: "Pink Lady",
 						price: 1.99,
 						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/apples/apple-pink-lady.png"
 					},

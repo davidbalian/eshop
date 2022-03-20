@@ -3,5 +3,14 @@
 }
 
 .category {
+}
+
+.showcases,
+.category {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 4rem;
 	width: 100%;
 }
