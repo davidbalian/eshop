@@ -12,16 +12,31 @@
 }
 
 .dropdown-menu {
+	background-color: var(--neutral);
 	position: fixed;
+	display: flex;
+}
+
+.dropdown-pc {
 	left: 0;
 	top: 4rem;
 	padding: 0 4rem;
 	height: 4rem;
-	display: flex;
+	flex-direction: row;
 	align-items: center;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	border-right: 0;
 	width: 100vw;
-	background-color: var(--neutral);
+}
+
+.dropdown-mobile {
+	left: 8rem;
+	top: 4rem;
+	height: 100vh;
+	flex-direction: column;
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+	border-bottom: 0;
+	width: 8rem;
 }
 
 .sublink {

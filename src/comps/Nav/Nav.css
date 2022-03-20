@@ -5,6 +5,7 @@
 	padding: 0rem 4rem;
 	height: 4rem;
 	background-color: var(--main);
+	position: relative;
 }
 
 .nav h1 {
@@ -57,4 +58,32 @@ ul {
 	align-items: center;
 	border-radius: 50%;
 	letter-spacing: -0.5px;
+}
+
+.menu-icon {
+	color: var(--neutral);
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 999;
+}
+
+@media screen and (max-width: 1000px) {
+	.nav {
+		padding: 0 1rem;
+	}
+
+	.navlinks {
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 8rem;
+		height: 100vh;
+		margin-top: 4rem;
+		background-color: var(--main);
+		transition: margin-left 0.2s ease;
+	}
 }

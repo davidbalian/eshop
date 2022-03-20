@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./NavItem.css";
 
-const NavItem = ({ title, items }) => {
+const NavItem = ({ title, items, device }) => {
 	const [show, setShow] = useState(0);
 	const [titleStyle, setTitleStyle] = useState({
 		backgroundColor: "var(--main)",
@@ -29,15 +29,17 @@ const NavItem = ({ title, items }) => {
 			<a href='#' className='navtitle' style={titleStyle}>
 				{title}
 			</a>
-			<ul style={{ display: show ? "flex" : "none" }} className='dropdown-menu'>
-				{items.map((item) => (
-					<li key={item}>
-						<a href='#' className='sublink'>
-							{item}
-						</a>
-					</li>
-				))}
-			</ul>
+			{show ? (
+				<ul className={`dropdown-menu dropdown-${device ? "pc" : "mobile"}`}>
+					{items.map((item) => (
+						<li key={item}>
+							<a href='#' className='sublink'>
+								{item}
+							</a>
+						</li>
+					))}
+				</ul>
+			) : null}
 		</li>
 	);
 };
