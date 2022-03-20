@@ -4,6 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import React, { useEffect, useState } from "react";
 import NavItem from "../NavItem/NavItem";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
 	const [open, setOpen] = useState(0);
@@ -11,12 +12,12 @@ const Nav = () => {
 	const [device, setDevice] = useState("");
 
 	const fruitTypes = [
-		"Apples",
-		"Citrus",
-		"Stone Fruit",
-		"Tropical & Exotic",
-		"Berries",
-		"Melons"
+		"apples",
+		"citrus",
+		"stone fruit",
+		"tropical & exotic",
+		"berries",
+		"melons"
 	];
 
 	const vegetableTypes = [
@@ -72,10 +73,18 @@ const Nav = () => {
 						marginLeft: open ? "0" : "-10rem"
 					}}
 				>
-					<NavItem title='Fruits' items={fruitTypes} device={device} />
-					<NavItem title='Vegetables' items={vegetableTypes} device={device} />
-					<NavItem title='Whole Grains' items={null} device={device} />
-					<NavItem title='Cereals' items={cerealTypes} device={device} />
+					<Link to='/fruits' style={{ textDecoration: "none" }}>
+						<NavItem title='Fruits' items={fruitTypes} device={device} />
+					</Link>
+					<Link to='/vegetables' style={{ textDecoration: "none" }}>
+						<NavItem title='Vegetables' items={vegetableTypes} device={device} />
+					</Link>
+					<Link to='/whole grains' style={{ textDecoration: "none" }}>
+						<NavItem title='Whole Grains' items={null} device={device} />
+					</Link>
+					<Link to='/cereals' style={{ textDecoration: "none" }}>
+						<NavItem title='Cereals' items={cerealTypes} device={device} />
+					</Link>
 				</ul>
 			</nav>
 			<h1>Buddy David's</h1>

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./NavItem.css";
+import { Link } from "react-router-dom";
 
 const NavItem = ({ title, items, device }) => {
 	const [show, setShow] = useState(0);

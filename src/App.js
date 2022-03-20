@@ -6,6 +6,8 @@ import Nav from "./comps/Nav/Nav";
 import ProductPage from "./comps/ProductPage/ProductPage";
 import Showcase from "./comps/Showcase/Showcase";
 import { products } from "./products";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Category from "./comps/Category/Category";
 
 export const ProductsContext = createContext();
 
@@ -20,16 +22,21 @@ const App = () => {
 
 	return (
 		// <ThemeProvider theme={theme}>
-		<ProductsContext.Provider value={{ products }}>
-			<div className='app'>
-				<Nav />
-				<div className='body'>
-					<Hero />
-					<Showcase title='Shop Fruits' />
-					<ProductPage />
+		<Router>
+			<ProductsContext.Provider value={{ products }}>
+				<div className='app'>
+					<Nav />
+					<div className='body'>
+						<Routes>
+							<Route path='/' element={<Hero />} />
+							<Route path='/showcase' element={<Showcase title='Shop Fruits' />} />
+							<Route path='/:category' element={<Category />} />
+							<Route path='/:category/:type' element={<ProductPage />} />
+						</Routes>
+					</div>
 				</div>
-			</div>
-		</ProductsContext.Provider>
+			</ProductsContext.Provider>
+		</Router>
 
 		// </ThemeProvider>
 	);
