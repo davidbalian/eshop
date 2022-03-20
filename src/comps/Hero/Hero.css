@@ -2,7 +2,8 @@
 	width: 100%;
 	height: auto;
 	aspect-ratio: 16/6.5;
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
 	padding: 0rem 6rem;
 	background-blend-mode: darken;
 	border-radius: 0.5rem;
@@ -18,4 +19,47 @@
 	color: var(--neutral);
 	letter-spacing: -1px;
 	font-size: var(--huge-size);
+}
+
+@media screen and (max-width: 1200px) {
+	.hero {
+		aspect-ratio: 16/7;
+		padding: 0rem 4rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.hero {
+		aspect-ratio: 16/7.5;
+		padding: 0rem 2rem;
+	}
+
+	.hero h1 {
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 876px) {
+	.hero {
+		aspect-ratio: 16/8;
+		padding: 0rem 2rem;
+	}
+
+	.hero h1 {
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.hero {
+		aspect-ratio: 16/9;
+		padding: 0rem 1rem;
+		border-radius: 0;
+		width: 100vw;
+		margin-left: -1rem;
+	}
+
+	.hero h1 {
+		font-size: 2.5rem;
+	}
 }

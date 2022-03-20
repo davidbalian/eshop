@@ -63,3 +63,27 @@ button {
 	background-color: var(--secondary-dark);
 	color: var(--neutral-dark);
 }
+
+@media screen and (max-width: 1200px) {
+	.body {
+		padding: 2rem 4rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.body {
+		padding: 2rem 2rem;
+	}
+}
+
+@media screen and (max-width: 876px) {
+	.body {
+		padding: 2rem 1rem;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.body {
+		padding: 2rem 1rem;
+	}
+}
