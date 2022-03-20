@@ -11,7 +11,7 @@ const Nav = () => {
 	const [device, setDevice] = useState("");
 
 	const fruitTypes = [
-		"Apples & Pears",
+		"Apples",
 		"Citrus",
 		"Stone Fruit",
 		"Tropical & Exotic",
@@ -69,8 +69,7 @@ const Nav = () => {
 				<ul
 					className='navlinks'
 					style={{
-						marginLeft: open ? "0" : "-10rem",
-						transition: `margin-left ${showBurger ? "0.2" : "0"} ease`
+						marginLeft: open ? "0" : "-10rem"
 					}}
 				>
 					<NavItem title='Fruits' items={fruitTypes} device={device} />

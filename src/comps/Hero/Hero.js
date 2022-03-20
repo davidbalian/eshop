@@ -7,7 +7,7 @@ const Hero = () => {
 		<div className='hero' style={{ background: `rgba(1, 22, 56, .6) url(${heroBg})` }}>
 			<div className='heading'>
 				<h1>Shop the healthiest,</h1>
-				<h1>spend the lowest.</h1>
+				<h1>spend the least.</h1>
 			</div>
 			<button className='cta-button'>Shop Now</button>
 		</div>

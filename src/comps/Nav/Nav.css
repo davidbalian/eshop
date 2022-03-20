@@ -10,6 +10,7 @@
 	left: 0;
 	width: 100vw;
 	box-shadow: var(--shadow);
+	z-index: 999;
 }
 
 .nav h1 {
@@ -92,6 +93,6 @@ ul {
 		height: 100vh;
 		margin-top: 4rem;
 		background-color: var(--main);
-		transition: margin-left 0.2s ease;
+		margin-left: -10rem;
 	}
 }

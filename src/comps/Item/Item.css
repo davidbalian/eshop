@@ -51,6 +51,7 @@
 	transition: 0.1s;
 	cursor: pointer;
 	transform: scale(0.9);
+	z-index: 0;
 }
 
 .details-cart svg:hover {

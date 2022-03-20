@@ -1,9 +1,13 @@
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/system";
-import React from "react";
+import React, { createContext } from "react";
 import Hero from "./comps/Hero/Hero";
 import Nav from "./comps/Nav/Nav";
+import ProductPage from "./comps/ProductPage/ProductPage";
 import Showcase from "./comps/Showcase/Showcase";
+import { products } from "./products";
+
+export const ProductsContext = createContext();
 
 const App = () => {
 	// const theme = createTheme({
@@ -16,13 +20,17 @@ const App = () => {
 
 	return (
 		// <ThemeProvider theme={theme}>
-		<div className='app'>
-			<Nav />
-			<div className='body'>
-				<Hero />
-				<Showcase title='Shop Fruits' />
+		<ProductsContext.Provider value={{ products }}>
+			<div className='app'>
+				<Nav />
+				<div className='body'>
+					<Hero />
+					<Showcase title='Shop Fruits' />
+					<ProductPage />
+				</div>
 			</div>
-		</div>
+		</ProductsContext.Provider>
+
 		// </ThemeProvider>
 	);
 };

@@ -1,0 +1,14 @@
+.product-page {
+	width: 100%;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 2rem;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
