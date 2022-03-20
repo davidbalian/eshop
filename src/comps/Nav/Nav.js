@@ -73,16 +73,40 @@ const Nav = () => {
 						marginLeft: open ? "0" : "-10rem"
 					}}
 				>
-					<Link to='/fruits' style={{ textDecoration: "none" }}>
+					<Link
+						to='/fruits'
+						style={{ textDecoration: "none" }}
+						onClick={() => {
+							!device && setOpen(0);
+						}}
+					>
 						<NavItem title='Fruits' items={fruitTypes} device={device} />
 					</Link>
-					<Link to='/vegetables' style={{ textDecoration: "none" }}>
+					<Link
+						to='/vegetables'
+						style={{ textDecoration: "none" }}
+						onClick={() => {
+							!device && setOpen(0);
+						}}
+					>
 						<NavItem title='Vegetables' items={vegetableTypes} device={device} />
 					</Link>
-					<Link to='/whole grains' style={{ textDecoration: "none" }}>
+					<Link
+						to='/whole grains'
+						style={{ textDecoration: "none" }}
+						onClick={() => {
+							!device && setOpen(0);
+						}}
+					>
 						<NavItem title='Whole Grains' items={null} device={device} />
 					</Link>
-					<Link to='/cereals' style={{ textDecoration: "none" }}>
+					<Link
+						to='/cereals'
+						style={{ textDecoration: "none" }}
+						onClick={() => {
+							!device && setOpen(0);
+						}}
+					>
 						<NavItem title='Cereals' items={cerealTypes} device={device} />
 					</Link>
 				</ul>

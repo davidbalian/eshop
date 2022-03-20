@@ -2,9 +2,6 @@
 	text-transform: capitalize;
 }
 
-.category {
-}
-
 .showcases,
 .category {
 	display: flex;
