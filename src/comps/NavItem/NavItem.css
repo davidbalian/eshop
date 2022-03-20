@@ -1,0 +1,37 @@
+.navtitle {
+	text-decoration: none;
+	display: block;
+	line-height: 4rem;
+	padding: 0 0.5rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: var(--text-size);
+}
+
+.navitem li {
+}
+
+.dropdown-menu {
+	position: fixed;
+	left: 0;
+	top: 4rem;
+	padding: 0 4rem;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	width: 100vw;
+	background-color: var(--neutral);
+}
+
+.sublink {
+	line-height: 4rem;
+	padding: 0 0.5rem;
+	color: var(--main);
+	text-decoration: none;
+	font-size: var(--text-size);
+}
+
+.sublink:hover {
+	text-decoration: underline;
+}

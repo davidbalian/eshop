@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	--heading: "Fjalla One";
+	--text: "Open Sans";
+	--lighter-font: 300;
+	--light-font: 400;
+	--bold-font: 700;
+	--neutral: #fff;
+	--main: #011638;
+	--secondary: #087f8c;
+	--text-size: 0.8rem;
+	font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: var(--heading), sans-serif;
+}
+
+p,
+a,
+li,
+.cart-badge {
+	font-family: var(--text), sans-serif;
 }
