@@ -8,9 +8,14 @@ const Cart = () => {
 	const { itemsInCart } = useContext(CartProductsContext);
 
 	return (
-		<div>
+		<div className='cart-div'>
 			<h1>Items in cart: {itemsCount}</h1>
-			<div className='cart'></div>
+			<div className='cart-items'>
+				{console.log(itemsInCart.slice(1))}
+				{itemsInCart.slice(1).map((item) => (
+					<Item key={item.title} title={item.title} price={item.price} src={item.src} />
+				))}
+			</div>
 		</div>
 	);
 };

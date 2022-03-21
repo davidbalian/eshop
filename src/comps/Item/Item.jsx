@@ -23,7 +23,10 @@ const Item = ({ title, price, src }) => {
 					className='shopping-cart'
 					onClick={() => {
 						setItemsCount(itemsCount + 1);
-						setItemsInCart([...itemsInCart, { title: title, price: price, src: src }]);
+						setItemsInCart((itemsInCart) => [
+							...itemsInCart,
+							{ title: title, price: price, src: src }
+						]);
 					}}
 				/>
 			</div>
