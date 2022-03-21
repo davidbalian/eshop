@@ -231,49 +231,34 @@ export const products = [
 						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/marrow/cucumber.png"
 					},
 					{
-						title: "Apricot",
+						title: "Pumpkin",
 						price: 1.99,
 						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/marrow/pumpkin.png"
 					},
 					{
-						title: "Peach",
+						title: "Zuchini",
 						price: 1.99,
 						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/marrow/zuchini.png"
 					}
 				]
 			},
 			{
-				title: "berries",
+				title: "root",
 				prods: [
 					{
-						title: "Blueberries",
+						title: "Potato",
 						price: 1.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/blueberry.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/root/potato.png"
 					},
 					{
-						title: "Raspberries",
+						title: "Sweet Potato",
 						price: 1.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/raspberry.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/root/sweet potato.png"
 					},
 					{
-						title: "Strawberries",
+						title: "Yam",
 						price: 1.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/strawberry.png"
-					},
-					{
-						title: "Cranberries",
-						price: 2.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/cranberry.png"
-					},
-					{
-						title: "Grapes",
-						price: 1.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/grape.png"
-					},
-					{
-						title: "Banana",
-						price: 1.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/banana.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/root/yam.png"
 					}
 				]
 			},
