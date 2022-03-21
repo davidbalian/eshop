@@ -10,6 +10,7 @@ const Nav = () => {
 	const [open, setOpen] = useState(0);
 	const [showBurger, setShowBurger] = useState(0);
 	const [device, setDevice] = useState("");
+	const [show, setShow] = useState(0);
 
 	const fruitTypes = ["apples", "citrus", "stone fruit", "berries", "melons"];
 
@@ -66,7 +67,7 @@ const Nav = () => {
 							!device && setOpen(0);
 						}}
 					>
-						<NavItem title='Fruits' items={fruitTypes} device={device} />
+						<NavItem title='Fruits' items={fruitTypes} device={device} open={open} />
 					</Link>
 					<Link
 						to='/eshop/vegetables'
@@ -75,7 +76,12 @@ const Nav = () => {
 							!device && setOpen(0);
 						}}
 					>
-						<NavItem title='Vegetables' items={vegetableTypes} device={device} />
+						<NavItem
+							title='Vegetables'
+							items={vegetableTypes}
+							device={device}
+							open={open}
+						/>
 					</Link>
 					{/* <Link
 						to='/whole grains'

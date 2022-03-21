@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./NavItem.css";
 import { Link } from "react-router-dom";
 
-const NavItem = ({ title, items, device }) => {
+const NavItem = ({ title, items, device, open }) => {
 	const [show, setShow] = useState(0);
 	const [titleStyle, setTitleStyle] = useState({
 		backgroundColor: "var(--main)",
@@ -30,16 +30,18 @@ const NavItem = ({ title, items, device }) => {
 			<a href='#' className='navtitle' style={titleStyle}>
 				{title}
 			</a>
-			{show && items ? (
-				<ul className={`dropdown-menu dropdown-${device ? "pc" : "mobile"}`}>
-					{items.map((item) => (
-						<li key={item} style={{ textTransform: "capitalize" }}>
-							<a href='#' className='sublink'>
-								{item}
-							</a>
-						</li>
-					))}
-				</ul>
+			{open ? (
+				show && items ? (
+					<ul className={`dropdown-menu dropdown-${device ? "pc" : "mobile"}`}>
+						{items.map((item) => (
+							<li key={item} style={{ textTransform: "capitalize" }}>
+								<a href='#' className='sublink'>
+									{item}
+								</a>
+							</li>
+						))}
+					</ul>
+				) : null
 			) : null}
 		</li>
 	);
