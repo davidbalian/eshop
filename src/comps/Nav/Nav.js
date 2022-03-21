@@ -15,7 +15,7 @@ const Nav = () => {
 
 	const vegetableTypes = ["Leafy Green", "Cruciferous", "Marrow", "Root", "Allium"];
 
-	const cerealTypes = ["Rice", "Maize", "Oats", "Rye", "Barley", "Sorghum", "Wheat", "Quinoa"];
+	// const cerealTypes = ["Rice", "Maize", "Oats", "Rye", "Barley", "Sorghum", "Wheat", "Quinoa"];
 
 	window.onresize = () => {
 		if (window.innerWidth <= 1000) {
@@ -77,7 +77,7 @@ const Nav = () => {
 					>
 						<NavItem title='Vegetables' items={vegetableTypes} device={device} />
 					</Link>
-					<Link
+					{/* <Link
 						to='/whole grains'
 						style={{ textDecoration: "none" }}
 						onClick={() => {
@@ -94,7 +94,7 @@ const Nav = () => {
 						}}
 					>
 						<NavItem title='Cereals' items={cerealTypes} device={device} />
-					</Link>
+					</Link> */}
 				</ul>
 			</nav>
 			<Link to='/' className='logo'>
