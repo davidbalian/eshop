@@ -193,37 +193,32 @@ export const products = [
 					{
 						title: "Spinach",
 						price: 1.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/leafy-green/spiach.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/leafy-green/spinach.png"
 					}
 				]
 			},
 			{
-				title: "citrus",
+				title: "cruciferous",
 				prods: [
 					{
-						title: "Orange",
-						price: 1.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/citrus/orange.png"
-					},
-					{
-						title: "Tangerine",
-						price: 1.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/citrus/tangerine.png"
-					},
-					{
-						title: "Lime",
-						price: 1.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/citrus/lime.png"
-					},
-					{
-						title: "Lemon",
+						title: "Broccoli",
 						price: 2.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/citrus/lemon.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/cruciferous/broccoli.png"
 					},
 					{
-						title: "Grapefruit",
-						price: 3.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/citrus/grapefruit.png"
+						title: "Brussel Sprouts",
+						price: 0.99,
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/cruciferous/brussel.png"
+					},
+					{
+						title: "Cabbage",
+						price: 1.49,
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/cruciferous/cabbage.png"
+					},
+					{
+						title: "Cauliflower",
+						price: 1.49,
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/cruciferous/cauliflower.png"
 					}
 				]
 			},
