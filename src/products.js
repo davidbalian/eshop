@@ -156,6 +156,26 @@ export const products = [
 						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/banana.png"
 					}
 				]
+			},
+			{
+				title: "berries",
+				prods: [
+					{
+						title: "Watermelon",
+						price: 2.49,
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/melons/watermelon.png"
+					},
+					{
+						title: "Rockmelon",
+						price: 1.49,
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/melons/rockmelon.png"
+					},
+					{
+						title: "Honeydew Melon",
+						price: 3.99,
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/melons/watermelon.png"
+					}
+				]
 			}
 		]
 	}

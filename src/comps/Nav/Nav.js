@@ -11,14 +11,7 @@ const Nav = () => {
 	const [showBurger, setShowBurger] = useState(0);
 	const [device, setDevice] = useState("");
 
-	const fruitTypes = [
-		"apples",
-		"citrus",
-		"stone fruit",
-		"tropical & exotic",
-		"berries",
-		"melons"
-	];
+	const fruitTypes = ["apples", "citrus", "stone fruit", "berries", "melons"];
 
 	const vegetableTypes = [
 		"Leafy Green",
