@@ -1,16 +1,18 @@
 import ShoppingBasketRoundedIcon from "@mui/icons-material/ShoppingBasketRounded";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import NavItem from "../NavItem/NavItem";
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import { CartCounterContext } from "../../App";
 
 const Nav = () => {
 	const [open, setOpen] = useState(0);
 	const [showBurger, setShowBurger] = useState(0);
 	const [device, setDevice] = useState("");
-	const [show, setShow] = useState(0);
+
+	const { itemsCount } = useContext(CartCounterContext);
 
 	const fruitTypes = ["apples", "citrus", "stone fruit", "berries", "melons"];
 
@@ -106,10 +108,12 @@ const Nav = () => {
 			<Link to='/eshop' className='logo'>
 				<h1>Buddy David's</h1>
 			</Link>
-			<div className='cart'>
-				<ShoppingCartOutlinedIcon fontSize='medium' className='shopping-cart' />
-				<p className='cart-badge'>3</p>
-			</div>
+			<Link to='/eshop/cart'>
+				<div className='cart'>
+					<ShoppingCartOutlinedIcon fontSize='medium' className='shopping-cart' />
+					<p className='cart-badge'>{itemsCount}</p>
+				</div>
+			</Link>
 		</div>
 	);
 };
