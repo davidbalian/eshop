@@ -158,7 +158,7 @@ export const products = [
 				]
 			},
 			{
-				title: "berries",
+				title: "melons",
 				prods: [
 					{
 						title: "Watermelon",
