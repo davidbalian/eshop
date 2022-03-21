@@ -143,7 +143,7 @@ export const products = [
 					{
 						title: "Cranberries",
 						price: 2.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/cranberry.jpg"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/berries/cranberry.png"
 					},
 					{
 						title: "Grapes",
