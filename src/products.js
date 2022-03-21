@@ -223,42 +223,22 @@ export const products = [
 				]
 			},
 			{
-				title: "stone fruit",
+				title: "marrow",
 				prods: [
 					{
-						title: "Nectarine",
+						title: "Cucumber",
 						price: 1.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/stone-fruit/nectarine.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/marrow/cucumber.png"
 					},
 					{
 						title: "Apricot",
 						price: 1.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/stone-fruit/apricot.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/marrow/pumpkin.png"
 					},
 					{
 						title: "Peach",
 						price: 1.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/stone-fruit/peach.png"
-					},
-					{
-						title: "Plum",
-						price: 2.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/stone-fruit/plum.png"
-					},
-					{
-						title: "Cherries",
-						price: 1.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/stone-fruit/cherry.png"
-					},
-					{
-						title: "Mango",
-						price: 1.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/stone-fruit/mango.png"
-					},
-					{
-						title: "Avocado",
-						price: 2.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/stone-fruit/avocado.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/marrow/zuchini.png"
 					}
 				]
 			},
