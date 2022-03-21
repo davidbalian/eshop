@@ -173,7 +173,7 @@ export const products = [
 					{
 						title: "Honeydew Melon",
 						price: 3.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/melons/watermelon.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/melons/honeydew.png"
 					}
 				]
 			}
