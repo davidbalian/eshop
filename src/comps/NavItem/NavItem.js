@@ -33,7 +33,7 @@ const NavItem = ({ title, items, device }) => {
 			{show && items ? (
 				<ul className={`dropdown-menu dropdown-${device ? "pc" : "mobile"}`}>
 					{items.map((item) => (
-						<li key={item}>
+						<li key={item} style={{ textTransform: "capitalize" }}>
 							<a href='#' className='sublink'>
 								{item}
 							</a>
