@@ -14,7 +14,7 @@ const Nav = () => {
 
 	const fruitTypes = ["apples", "citrus", "stone fruit", "berries", "melons"];
 
-	const vegetableTypes = ["Leafy Green", "Cruciferous", "Marrow", "Root", "Allium"];
+	const vegetableTypes = ["leafy green", "cruciferous", "marrow", "root", "allium"];
 
 	// const cerealTypes = ["Rice", "Maize", "Oats", "Rye", "Barley", "Sorghum", "Wheat", "Quinoa"];
 
@@ -67,7 +67,7 @@ const Nav = () => {
 							!device && setOpen(0);
 						}}
 					>
-						<NavItem title='Fruits' items={fruitTypes} device={device} open={open} />
+						<NavItem title='fruits' items={fruitTypes} device={device} open={open} />
 					</Link>
 					<Link
 						to='/eshop/vegetables'
@@ -77,7 +77,7 @@ const Nav = () => {
 						}}
 					>
 						<NavItem
-							title='Vegetables'
+							title='vegetables'
 							items={vegetableTypes}
 							device={device}
 							open={open}

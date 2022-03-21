@@ -1,5 +1,6 @@
 import React from "react";
 import heroBg from "../../imgs/hero-bg.jpg";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 const Hero = () => {
@@ -9,7 +10,9 @@ const Hero = () => {
 				<h1>Shop the healthiest,</h1>
 				<h1>spend the least.</h1>
 			</div>
-			<button className='cta-button'>Shop Now</button>
+			<Link to='/eshop/fruits'>
+				<button className='cta-button'>Shop Now</button>
+			</Link>
 		</div>
 	);
 };

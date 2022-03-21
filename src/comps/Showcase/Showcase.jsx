@@ -1,7 +1,6 @@
 import React from "react";
 import Item from "../Item/Item";
 import "./Showcase.css";
-import { products } from "../../products";
 
 const Showcase = ({ title, prods }) => {
 	return (

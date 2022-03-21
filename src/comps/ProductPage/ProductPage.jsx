@@ -1,18 +1,32 @@
 import React, { useContext } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { ProductsContext } from "../../App";
 import Item from "../Item/Item";
 import "./ProductPage.css";
 
 const ProductPage = () => {
 	const { products } = useContext(ProductsContext);
-	const { productCategory, productSubCategory } = useParams();
+	const { category, type } = useParams();
+
+	let cat, ty;
+
+	for (let i = 0; i < products.length; i++) {
+		if (category === products[i].category) {
+			cat = products[i];
+		}
+	}
+
+	for (let j = 0; j < cat.types.length; j++) {
+		if (type === cat.types[j].title) {
+			ty = cat.types[j].prods;
+		}
+	}
 
 	return (
 		<div className='product-page'>
-			<h1 style={{ textTransform: "capitalize" }}>{productSubCategory}</h1>
+			<h1 style={{ textTransform: "capitalize" }}>{type}</h1>
 			<div className='products'>
-				{products[0].subcategories[0].apples.map((product) => (
+				{ty.map((product) => (
 					<Item
 						key={product.title}
 						title={product.title}
