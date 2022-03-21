@@ -60,7 +60,7 @@ const Nav = () => {
 					}}
 				>
 					<Link
-						to='/fruits'
+						to='/eshop/fruits'
 						style={{ textDecoration: "none" }}
 						onClick={() => {
 							!device && setOpen(0);
@@ -69,7 +69,7 @@ const Nav = () => {
 						<NavItem title='Fruits' items={fruitTypes} device={device} />
 					</Link>
 					<Link
-						to='/vegetables'
+						to='/eshop/vegetables'
 						style={{ textDecoration: "none" }}
 						onClick={() => {
 							!device && setOpen(0);
@@ -97,7 +97,7 @@ const Nav = () => {
 					</Link> */}
 				</ul>
 			</nav>
-			<Link to='/' className='logo'>
+			<Link to='/eshop' className='logo'>
 				<h1>Buddy David's</h1>
 			</Link>
 			<div className='cart'>

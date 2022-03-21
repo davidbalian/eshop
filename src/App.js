@@ -28,11 +28,13 @@ const App = () => {
 					<Nav />
 					<div className='body'>
 						<Routes>
-							<Route path='/' element={<Hero />} />
 							<Route path='/eshop' element={<Hero />} />
-							<Route path='/showcase' element={<Showcase title='Shop Fruits' />} />
-							<Route path='/:category' element={<Category />} />
-							<Route path='/:category/:type' element={<ProductPage />} />
+							<Route
+								path='/eshop/showcase'
+								element={<Showcase title='Shop Fruits' />}
+							/>
+							<Route path='/eshop/:category' element={<Category />} />
+							<Route path='/eshop/:category/:type' element={<ProductPage />} />
 						</Routes>
 					</div>
 				</div>
