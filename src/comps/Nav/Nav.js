@@ -13,14 +13,7 @@ const Nav = () => {
 
 	const fruitTypes = ["apples", "citrus", "stone fruit", "berries", "melons"];
 
-	const vegetableTypes = [
-		"Leafy Green",
-		"Cruciferous",
-		"Marrow",
-		"Root",
-		"Edible plant stem",
-		"Allium"
-	];
+	const vegetableTypes = ["Leafy Green", "Cruciferous", "Marrow", "Root", "Allium"];
 
 	const cerealTypes = ["Rice", "Maize", "Oats", "Rye", "Barley", "Sorghum", "Wheat", "Quinoa"];
 

@@ -263,22 +263,22 @@ export const products = [
 				]
 			},
 			{
-				title: "melons",
+				title: "allium",
 				prods: [
 					{
-						title: "Watermelon",
+						title: "Onion",
 						price: 2.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/melons/watermelon.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/allium/onion.png"
 					},
 					{
-						title: "Rockmelon",
+						title: "Garlic",
 						price: 1.49,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/melons/rockmelon.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/allium/garlic.png"
 					},
 					{
-						title: "Honeydew Melon",
+						title: "Shallot",
 						price: 3.99,
-						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/melons/honeydew.png"
+						src: "https://cdn.jsdelivr.net/gh/davidbalian/eshop/src/imgs/allium/shallot.png"
 					}
 				]
 			}
