@@ -5,14 +5,11 @@ import React, { useEffect, useState, useContext } from "react";
 import NavItem from "../NavItem/NavItem";
 import "./Nav.css";
 import { Link } from "react-router-dom";
-import { CartCounterContext } from "../../App";
 
 const Nav = () => {
 	const [open, setOpen] = useState(0);
 	const [showBurger, setShowBurger] = useState(0);
 	const [device, setDevice] = useState("");
-
-	const { itemsCount } = useContext(CartCounterContext);
 
 	const fruitTypes = ["apples", "citrus", "stone fruit", "berries", "melons"];
 
@@ -111,7 +108,7 @@ const Nav = () => {
 			<Link to='/eshop/cart'>
 				<div className='cart'>
 					<ShoppingCartOutlinedIcon fontSize='medium' className='shopping-cart' />
-					<p className='cart-badge'>{itemsCount}</p>
+					<p className='cart-badge'>0</p>
 				</div>
 			</Link>
 		</div>
