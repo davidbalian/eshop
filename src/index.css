@@ -68,6 +68,16 @@ a {
 	color: var(--neutral-dark);
 }
 
+svg {
+	transform: scale(1);
+	padding: 0.3rem;
+	border-radius: 0.5rem;
+}
+
+svg:hover {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
 	.body {
 		padding: 2rem 4rem;

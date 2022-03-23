@@ -10,8 +10,7 @@ import Category from "./comps/Category/Category";
 import Cart from "./comps/Cart/Cart";
 
 export const ProductsContext = createContext();
-export const CartProductsContext = createContext();
-export const CartCounterContext = createContext();
+export const CartContext = createContext();
 
 const App = () => {
 	// const theme = createTheme({
@@ -22,22 +21,26 @@ const App = () => {
 	// 	}
 	// });
 
+	const [cartItems, setCartItems] = useState([]);
+
 	return (
 		// <ThemeProvider theme={theme}>
 		<Router>
-			<ProductsContext.Provider value={{ products }}>
-				<div className='app'>
-					<Nav />
-					<div className='body'>
-						<Routes>
-							<Route path='/eshop' element={<Hero />} />
-							<Route path='/eshop/:category' element={<Category />} />
-							<Route path='/eshop/:category/:type' element={<ProductPage />} />
-							<Route path='/eshop/cart' element={<Cart />} />
-						</Routes>
+			<CartContext.Provider value={{ cartItems, setCartItems }}>
+				<ProductsContext.Provider value={{ products }}>
+					<div className='app'>
+						<Nav />
+						<div className='body'>
+							<Routes>
+								<Route path='/eshop' element={<Hero />} />
+								<Route path='/eshop/:category' element={<Category />} />
+								<Route path='/eshop/:category/:type' element={<ProductPage />} />
+								<Route path='/eshop/cart' element={<Cart />} />
+							</Routes>
+						</div>
 					</div>
-				</div>
-			</ProductsContext.Provider>
+				</ProductsContext.Provider>
+			</CartContext.Provider>
 		</Router>
 
 		// </ThemeProvider>

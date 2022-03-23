@@ -43,19 +43,29 @@
 	align-items: flex-start;
 }
 
-.details-cart svg {
+.shopping-cart {
 	color: var(--neutral);
-	font-size: 3rem;
-	padding: 0.5rem;
-	border-radius: 0.5rem;
+	/* border-radius: 0.5rem; */
 	background-color: var(--secondary);
 	transition: 0.1s;
 	cursor: pointer;
-	transform: scale(0.9);
 	z-index: 0;
 }
 
-.details-cart svg:hover {
+.shopping-cart:hover,
+.add-remove-btn:hover {
 	color: var(--neutral-dark);
 	background-color: var(--secondary-dark);
+}
+
+.add-remove-btn {
+	background-color: var(--secondary);
+	color: var(--neutral);
+}
+
+.quantity {
+	display: flex;
+	align-items: center;
+	border-radius: 0.5rem;
+	gap: 0.5rem;
 }
